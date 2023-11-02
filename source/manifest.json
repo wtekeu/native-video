@@ -1,0 +1,24 @@
+{
+	"name": "Native Videon",
+	"version": "0.0.1",
+	"description": "Simple video watching experience",
+	"homepage_url": "https://www.native-video.com",
+	"manifest_version": 3,
+	"minimum_chrome_version": "101",
+	"icons": {
+		"128": "icon.png"
+	},
+	"permissions": [
+		"contextMenus",
+		"activeTab",
+		"declarativeNetRequestWithHostAccess",
+		"storage"
+	],
+	"host_permissions": [
+		"<all_urls>"
+	],
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	}
+}
